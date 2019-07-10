@@ -10,8 +10,8 @@ const createPacket = (opcode, host, port) => {
     packet[i + 4] = host.split('.')[i];
   }
 
-  packet[8] = port & 0xFF;
-  packet[9] = port >> 8 & 0xFF;
+  packet[8] = port & 0xFF; // eslint-disable-line no-bitwise
+  packet[9] = port >> 8 & 0xFF; // eslint-disable-line no-bitwise, no-mixed-operators
   packet[10] = opcode.charCodeAt(0);
 
   return packet;
