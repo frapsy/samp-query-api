@@ -42,8 +42,9 @@ const sendPacket = (opcode, host, port) => new Promise((resolve, reject) => {
 });
 
 const info = (host, port) => new Promise((resolve, reject) => {
+  const startTime = Date.now();
   sendPacket('i', host, port).then((message) => {
-    const out = {};
+    const out = { ping: (Date.now() - startTime) };
     let offset = 0;
     let strlen = 0;
 
