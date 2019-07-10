@@ -1,0 +1,23 @@
+{
+  "name": "samp-query-api",
+  "version": "1.0.0",
+  "description": "Samp Query API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frapsy/samp-query-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frapsy/samp-query-api/issues"
+  },
+  "homepage": "https://github.com/frapsy/samp-query-api#readme",
+  "dependencies": {
+    "iconv-lite": "^0.5.0"
+  }
+}
